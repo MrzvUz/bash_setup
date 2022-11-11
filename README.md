@@ -86,6 +86,14 @@ complete -W "NSGlobalDomain" defaults;
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 ```
 
+# Silence ZSH warning.
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# General Aliases
+alias ll='ls -la'
+alias cls='clear'
+alias py='python3'
+
 #### Vim to create and modify .bash_prompt file:
 ```
 vim .bash_prompt
@@ -198,7 +206,7 @@ fi;
 
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
-PS1+="\[${bold}\]\n"; # newline
+PS1+="\[${bold}\]"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 # PS1+="\[${hostStyle}\]\h"; # host
