@@ -84,7 +84,6 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
-```
 
 # Silence ZSH warning.
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -93,6 +92,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 alias ll='ls -la'
 alias cls='clear'
 alias py='python3'
+```
 
 #### Vim to create and modify .bash_prompt file:
 ```
